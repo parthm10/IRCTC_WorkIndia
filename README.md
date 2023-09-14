@@ -3,7 +3,7 @@
 Railway Management System
 This is a simple railway management system built using Python and Flask, designed to handle train operations, user registration, and seat booking.
 
-Features
+## Features
 User Registration
 User Login
 Admin Access for Train Management
@@ -17,35 +17,28 @@ MySQL database for data storage
 Flask-SQLAlchemy for database management
 Flask-Migrate for database migrations
 Flask-JWT-Extended for authentication
-Installation
+
+##Installation
 Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/yourusername/railway-management-system.git
 Install the required dependencies:
 
-bash
-Copy code
 pip install -r requirements.txt
 Set up your MySQL database and configure the database URI in app.py:
 
 python
-Copy code
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/railwaydb'
 Create the necessary database tables:
 
-bash
-Copy code
 flask db init
 flask db migrate
 flask db upgrade
 Run the Flask application:
 
-bash
-Copy code
 flask run
-Usage
+
+## Usage
 Register a user by making a POST request to /api/signup with username, password, and email in the request body.
 
 Log in with your credentials by making a POST request to /api/login.
