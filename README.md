@@ -18,25 +18,36 @@ Flask-SQLAlchemy for database management
 Flask-Migrate for database migrations
 Flask-JWT-Extended for authentication
 
-##Installation
+## Installation
 Clone the repository:
 
+"""bash
 git clone https://github.com/yourusername/railway-management-system.git
+"""
+
 Install the required dependencies:
 
+"""bash
 pip install -r requirements.txt
+"""
 Set up your MySQL database and configure the database URI in app.py:
 
 python
+"""bash
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/railwaydb'
+"""
 Create the necessary database tables:
 
+"""bash
 flask db init
 flask db migrate
 flask db upgrade
+"""
 Run the Flask application:
 
+"""bash
 flask run
+"""
 
 ## Usage
 Register a user by making a POST request to /api/signup with username, password, and email in the request body.
