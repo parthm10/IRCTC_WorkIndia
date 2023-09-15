@@ -1,4 +1,4 @@
-# IRCTC_WorkIndia
+# Railway Management System
 
 Railway Management System
 This is a simple railway management system built using Python and Flask, designed to handle train operations, user registration, and seat booking.
